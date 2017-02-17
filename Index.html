@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Coffee Shop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Fav Icon -->
+    <!--<link rel="apple-touch-icon-precomposed" href="images/MMS Logo@1x.svg" />
+    <!--<link rel="apple-touch-startup-image" href="splash_screen.png" />-->
+    <!-- CSS Files -->
+    <link href="lib/jquerymobile/jquery.mobile.min.css" rel="stylesheet" />
+    <link href="css/mms_custom.css" rel="stylesheet" />
+    <!-- JS Files -->
+    <script src="lib/jquery/jquery-2.1.4.min.js"></script>
+    <script src="lib/jquerymobile/jquery.mobile.min.js"></script>
+    <script src="js/coffee.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="coffee-page" class="MMS-page" data-fullscreen="true">
+        <header data-role="header" data-position="fixed" class="header-background">
+            <h1><div class="header-title-home">               
+             
+            </div><div class="header-title-light">Coffee Shop</div></h1>
+        </header>
+        <section data-role="content" class="">
+            <section class="top-nav">
+                <div id="top-grey-bar"></div>
+                <div class="grey-bar grey-bar-12px"></div>
+            </section>
+            <section id="coffee-list" class="white-background ">
+                <div class="inner-title float-left">LIST</div>
+                <ul data-role="listview" id="coffee-options" class="white-background float-clear coffee-options">
+                    <li id="coffee-options-1" class="hasoptions">
+                        <div class="coffee-items-hr"></div>
+                        <div class="coffee-options-item clear-both">
+                            <a data-role="none" href="#coffee-order-confirm" id="order-coffee-page-link" data-transition="slidefade" class="no-underline">
+                                <div class="coffee-options-item-text flex-div">
+                                    <div class="float-left coffee-text-content">
+                                        Coffee
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="list-options-text list-options coffee-list-hide-options center-text-align">
+                            </div>
+                        </div>
+                    </li>
+                    <li id="coffee-options-2" class="hasoptions">
+                        <div class="coffee-items-hr"></div>
+                        <div class="coffee-options-item clear-both">
+                            <a data-role="none" href="#coffee-order-confirm" id="order-coffee-page-link" data-transition="slidefade" class="no-underline">
+                                <div class="coffee-options-item-text flex-div">
+                                    <div class=" coffee-text-content">
+                                        Tea
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="list-options-text list-options coffee-list-hide-options center-text-align">
+                            </div>
+                        </div>
+                    </li>
+                    <li id="coffee-options-3" class="nooptions">
+                        <div class="coffee-items-hr"></div>
+                        <div class="coffee-options-item clear-both">
+                            <a data-role="none" href="#coffee-order-confirm" id="order-coffee-page-link" data-transition="slidefade" class="no-underline">
+                                <div class="coffee-options-item-text flex-div">
+                                    <div class="float-left coffee-text-content">
+                                        Hot Mocha
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="list-options-text list-options coffee-list-hide-options center-text-align">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </div>
+    <div data-role="page" id="coffee-order-confirm" class="MMS-page grey-bar" data-fullscreen="true">
+        <header data-role="header" data-position="fixed" class="header-background" data-toggle="false">
+            <a href="#order-coffee-page" data-role="none" class="no-underline inner-link inner-link-left">&nbsp;</a>
+            <h1 class="header-title">Order Processed</h1>
+        </header>
+        <section data-role="content" id="review-order-content">
+            <section class="top-nav grey-bar">
+                <section class="coffee-order-confirmation-details">
+                    <div class="confirmation-top">
+                        <div class="confirmation-top-inner">&nbsp;</div>
+                        <div class="confirmation-top-bottom white-background">
+                            <div class="transaction-message">
+                                You are done with order
+                            </div>
+                            <div class="confirmation-number confirmation-from-selected-drinks-avilable-balance">Order Number&nbsp;<span id="confirmation-number">1234567</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <div class="grey-bar grey-bar-20px">&nbsp;</div>
+        <footer data-role="footer">
+            <section id="coffee-order-confirm-footer" class="white-background coffee-order-confirm">
+                <a data-role="none" href="#coffee-page" id="home-order-coffee-page-link" data-transition="slidefade" class="no-underline">
+                    <div class="coffee-order-confirm-inner">
+                        <div class="grey-bar float-left grey-bar-width7px grey-bar-height64px">&nbsp;</div>
+                        <div class="inner-title float-left">Thank You!</div>
+                    </div>
+                </a>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
